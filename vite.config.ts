@@ -5,8 +5,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: resolve(__dirname, './src/build.ts'),
-            name: 'transactionlink-widget-wrapper',
-            fileName: (format) => `transactionlink-widget-wrapper.${format}.js`,
+            name: 'transactionlink-js',
+            fileName: (format) => `transactionlink-js.${format}.js`,
         },
     },
 })

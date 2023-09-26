@@ -1,9 +1,9 @@
 {
-  "name": "transactionlink-widget",
+  "name": "transactionlink-js",
   "version": "0.0.160",
   "type": "module",
-  "main": "./dist/transactionlink-widget-wrapper.js",
-  "module": "./dist/transactionlink-widget-wrapper.es.js",
+  "main": "./dist/transactionlink-js.js",
+  "module": "./dist/transactionlink-js.es.js",
   "files": [
     "dist",
     "index.js"
@@ -26,8 +26,8 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/transactionlink-widget-wrapper.es.js",
-      "require": "./dist/transactionlink-widget-wrapper.umd.js",
+      "import": "./dist/transactionlink-js.es.js",
+      "require": "./dist/transactionlink-js.umd.js",
       "types": "./dist/index.d.ts"
     }
   },

@@ -10,16 +10,16 @@ This package is a frontend for your [Transactionlink Flow](https://docs.transact
 ### 1. Instalation
 **NPM**:
 ```BASH
-npm install transactionlink-widget
+npm install transactionlink-js
 ```
 **YARN**:
 ```BASH
-yarn add transactionlink-widget
+yarn add transactionlink-js
 ```
 
 ### 2. Initialization
 ```js
-import mountWidget from "transactionlink-widget"
+import mountWidget from "transactionlink-js"
 const widget = await mountWidget("YOUR_JWT", options)
 ```
 
