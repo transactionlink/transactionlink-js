@@ -1,0 +1,37 @@
+{
+  "name": "transactionlink-widget",
+  "version": "0.0.160",
+  "type": "module",
+  "main": "./dist/transactionlink-widget-wrapper.js",
+  "module": "./dist/transactionlink-widget-wrapper.es.js",
+  "files": [
+    "dist",
+    "index.js"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && cp src/types/dist.d.ts dist/index.d.ts",
+    "postbuild": "cp index.d.ts dist",
+    "preview": "vite preview",
+    "lint:scripts": "eslint . --ext .ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "eslint": "^8.42.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/transactionlink-widget-wrapper.es.js",
+      "require": "./dist/transactionlink-widget-wrapper.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "jwt-decode": "^3.1.2"
+  }
+}
