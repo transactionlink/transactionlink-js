@@ -13,7 +13,7 @@ type MountWidgetOptions = {
     inline?: boolean
 }
 
-declare module 'transactionlink-widget' {
+declare module 'transactionlink-js' {
     function mountWidget (ctx: string, opts: MountWidgetOptions): Promise<WidgetApi>;
     export default mountWidget
 }
