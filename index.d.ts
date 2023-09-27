@@ -1,8 +1,6 @@
 interface WidgetApi {
     open: () => void
     setContext: (p: string) => void;
-    setLanguage: (p: string) => void;
-    setMode: (p: string) => void;
     transactionlink_ready: () => void;
 }
 interface Window {
@@ -12,11 +10,10 @@ interface Window {
 
 type MountWidgetOptions = {
     useIframe?: boolean;
-    mode?: string;
-    language?: string;
+    inline?: boolean;
 }
 
-declare module 'transactionlink-widget' {
+declare module 'transactionlink-js' {
     function mountWidget (ctx: string, opts: MountWidgetOptions): Promise<WidgetApi>;
     export default mountWidget
 }
