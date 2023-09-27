@@ -1,1 +1,3 @@
-export * from './main'
+import mountWidget from './mount-widget'
+
+export default mountWidget
