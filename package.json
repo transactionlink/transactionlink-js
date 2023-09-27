@@ -1,6 +1,6 @@
 {
   "name": "transactionlink-js",
-  "version": "0.0.160",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/transactionlink-js.js",
   "module": "./dist/transactionlink-js.es.js",

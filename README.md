@@ -23,6 +23,15 @@ import mountWidget from "transactionlink-js"
 const widget = await mountWidget("YOUR_JWT", options)
 ```
 
+#### Available options
+
+```js
+const widget = await mountWidget("YOUR_JWT", {
+  inline: false, // display widget inline or inside modal
+  useIframe: false // use iframe or web component
+})
+```
+
 ### 3. Opening the widget
 ```js
 widget.open()
